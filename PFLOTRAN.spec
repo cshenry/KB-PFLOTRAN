@@ -9,8 +9,12 @@ module PFLOTRAN {
     } ReportResults;
 
     /*
-        This example function accepts any number of parameters and returns results in a KBaseReport
+        Thi function enables users to run a pflotran simulation from an input plfotran model and fbamodel chemistry
     */
     funcdef run_PFLOTRAN(mapping<string,UnspecifiedObject> params) returns (ReportResults output) authentication required;
-
+    
+    /*
+        This function enables users to upload files defining a pflotran model including input_deck and hdf5 parameter file
+    */
+    funcdef upload_plfotran_model(mapping<string,UnspecifiedObject> params) returns (ReportResults output) authentication required;
 };
