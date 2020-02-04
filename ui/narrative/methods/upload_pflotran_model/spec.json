@@ -73,7 +73,7 @@
          "text_options" : {
             "valid_ws_types" : [ ]
          }
-      },
+      }
    ], 
    "behavior" : {
       "service-mapping" : {
